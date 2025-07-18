@@ -55,6 +55,8 @@
         }
     }
 </style>
+<script src="https://unpkg.com/imask"></script>
+
 </head>
 <body>
 <header>
@@ -78,7 +80,11 @@
       <form id="quizForm">
         <label>Idade:<input type="number" name="idade" required></label>
         <label>Experiência (anos):<input type="number" step="0.1" name="experiencia"></label>
-        <label>Renda mensal estimada:<input type="number" name="renda"></label>
+        <label>
+  Renda mensal estimada:
+  <input type="text" id="renda" name="renda">
+</label>
+
         <label>Região de atuação:
           <select name="regiao">
             <option value="São Paulo">São Paulo</option>
@@ -104,3 +110,22 @@
   </div>
 </body>
 </html>
+<script>
+  const element = document.getElementById('renda');
+const maskOptions = {
+  mask: 'R$ num',
+  blocks: {
+    num: {
+      mask: Number,
+      thousandsSeparator: '.',
+      radix: ',',
+      mapToRadix: ['.'],
+      scale: 2,
+      signed: false,
+      padFractionalZeros: true // <-- garante sempre dois centavos, ex: R$ 10,00
+    }
+  }
+};
+
+  IMask(element, maskOptions);
+</script>

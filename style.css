@@ -55,7 +55,7 @@ label {
   flex-direction: column;
 }
 
-input[type="number"],
+input,
 select {
   padding: 10px;
   border: 1px solid #ccc;
