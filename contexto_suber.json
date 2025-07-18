@@ -1,0 +1,50 @@
+{
+  "categorias_veiculos": [
+    {
+      "categoria": "Intermediário",
+      "valor_diario": 70.26,
+      "capacidade_passageiros": 5.0,
+      "nota_conservacao": 3.99
+    },
+    {
+      "categoria": "Luxo",
+      "valor_diario": 130.69,
+      "capacidade_passageiros": 5.0,
+      "nota_conservacao": 3.84
+    },
+    {
+      "categoria": "Popular",
+      "valor_diario": 48.77,
+      "capacidade_passageiros": 5.0,
+      "nota_conservacao": 3.97
+    },
+    {
+      "categoria": "Van",
+      "valor_diario": 92.38,
+      "capacidade_passageiros": 8.06,
+      "nota_conservacao": 3.98
+    }
+  ],
+  "performance_geral": {
+    "mes": 6.5,
+    "ano": 2024.0,
+    "motoristas_ativos": 3186.0,
+    "receita_media_por_motorista": 2799.79,
+    "km_medio_mensal_por_motorista": 3502.08,
+    "satisfacao_media_motoristas": 4.0,
+    "problemas_veiculo": 44.58,
+    "problemas_atendimento": 25.5,
+    "tempo_medio_resolucao_h": 9.7,
+    "taxa_renovacao_contratos": 79.94,
+    "veiculos_disponiveis": 4339.92,
+    "taxa_disponibilidade_frota": 87.83,
+    "receita_por_veiculo": 2030.11
+  },
+  "precos_medios": {
+    "popular": 55.24,
+    "intermediario": 63.34,
+    "luxo": 82.26,
+    "van": 97.57
+  },
+  "categoria_prevista_IA": "Popular"
+}

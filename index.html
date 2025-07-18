@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SUber - Escolha seu Carro Ideal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="icon" href="suber.png" type="image/x-icon">
+<style>
+    header {
+        background: #ffffff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 18px 32px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        font-family: 'Segoe UI', Arial, sans-serif;
+        letter-spacing: 0.5px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .logo img {
+        width: 120px;
+        margin-right: 12px;
+        vertical-align: middle;
+    }
+
+    .logo-title {
+        font-size: 1.7rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #fff;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    }
+    @media (max-width: 600px) {
+        header {
+            padding: 12px 10px;
+        }
+        .logo-title {
+            font-size: 1.1rem;
+        }
+        .logo img {
+            height: 28px;
+            width: 28px;
+            margin-right: 8px;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="suber.png" alt="SUber Logo">
+    </div>
+</header>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <section id="intro">
+      <h1>Bem-vindo à SUber!</h1>
+      <p>Você é motorista de aplicativo e está em busca do carro ideal para alugar?</p>
+      <p>Nosso assistente inteligente vai te ajudar a encontrar o veículo perfeito, baseado no seu perfil e nos dados reais da SUber.</p>
+      <button id="startBtn">Começar</button>
+    </section>
+
+    <section id="formSection" class="hidden">
+      <h2>Responda algumas perguntas rápidas</h2>
+      <form id="quizForm">
+        <label>Idade:<input type="number" name="idade" required></label>
+        <label>Experiência (anos):<input type="number" step="0.1" name="experiencia"></label>
+        <label>Renda mensal estimada:<input type="number" name="renda"></label>
+        <label>Região de atuação:
+          <select name="regiao">
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Belo Horizonte">Belo Horizonte</option>
+            <option value="Porto Alegre">Porto Alegre</option>
+            <option value="Salvador">Salvador</option>
+            <option value="Recife">Recife</option>
+          </select>
+        </label>
+        <label>Tipo de serviço:
+          <select name="servico">
+            <option value="Uber/99">Uber/99</option>
+            <option value="Delivery">Delivery</option>
+            <option value="Executivo">Executivo</option>
+            <option value="Turismo">Turismo</option>
+          </select>
+        </label>
+        <button type="submit">Ver recomendação</button>
+      </form>
+      <div id="recomendacao"></div>
+    </section>
+  </div>
+</body>
+</html>
